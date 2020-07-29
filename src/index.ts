@@ -282,7 +282,7 @@ function hash160(buf: Buffer) {
     .update(buf)
     .digest();
   return crypto
-    .createHash('rmd160')
+    .createHash('ripemd160')
     .update(sha)
     .digest();
 }
